@@ -22,7 +22,7 @@ services:
 
   gitlab:
     restart: always
-    image: sameersbn/gitlab:13.7.0
+    image: sameersbn/gitlab:13.7.4
     depends_on:
     - redis
     - postgresql
@@ -50,8 +50,8 @@ services:
     - REDIS_HOST=redis
     - REDIS_PORT=6379
 
-    - TZ=america/sao_paulo
-    - GITLAB_TIMEZONE=sao_paulo
+    - TZ=Asia/Kolkata
+    - GITLAB_TIMEZONE=Kolkata
 
     - GITLAB_HTTPS=false
     - SSL_SELF_SIGNED=false
